@@ -1,13 +1,12 @@
-from typing import Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, StrictStr
 
 
 
 class BookBody(BaseModel):
     age: int
-    author: str
+    author: StrictStr
 
 class BookBodyDeserializer(BaseModel):
     id_: int
     age: int
-    author: str
+    author: StrictStr
