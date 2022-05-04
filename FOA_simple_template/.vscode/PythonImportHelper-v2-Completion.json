@@ -1,0 +1,232 @@
+[
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "instances.db",
+        "description": "instances.db",
+        "isExtraImport": true,
+        "detail": "instances.db",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "importPath": "regex",
+        "description": "regex",
+        "isExtraImport": true,
+        "detail": "regex",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "models.book",
+        "description": "models.book",
+        "isExtraImport": true,
+        "detail": "models.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBody",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBodyDeserializer",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "APIBlueprint",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAPI",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Info",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "importPath": "views.book",
+        "description": "views.book",
+        "isExtraImport": true,
+        "detail": "views.book",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "instances.db",
+        "description": "instances.db",
+        "peekOfCode": "db = SQLAlchemy()",
+        "detail": "instances.db",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "models.book",
+        "description": "models.book",
+        "peekOfCode": "class Book(db.Model):\n    __tablename__ = \"books\"\n    id_ = db.Column(db.Integer, primary_key=True)\n    age = db.Column(db.Integer)\n    author = db.Column(db.String(120))\n    def to_json(self):\n        return {\"id\": self.id_, **vars(self)}\n    def save_to_db(self):\n        db.session.add(self)\n        db.session.commit()",
+        "detail": "models.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBody",
+        "kind": 6,
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "peekOfCode": "class BookBody(BaseModel):\n    age: int\n    author: str\nclass BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: str",
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBodyDeserializer",
+        "kind": 6,
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "peekOfCode": "class BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: str",
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "get_book",
+        "kind": 2,
+        "importPath": "views.book",
+        "description": "views.book",
+        "peekOfCode": "def get_book():\n    \"\"\"Get all Book\n    \"\"\"\n    return {\"books\": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]}\n@api.post(\"/book\")\ndef create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()\n    book = Book(**d)\n    book.save_to_db()",
+        "detail": "views.book",
+        "documentation": {}
+    },
+    {
+        "label": "create_book",
+        "kind": 2,
+        "importPath": "views.book",
+        "description": "views.book",
+        "peekOfCode": "def create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()\n    book = Book(**d)\n    book.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\"}",
+        "detail": "views.book",
+        "documentation": {}
+    },
+    {
+        "label": "tag",
+        "kind": 5,
+        "importPath": "views.book",
+        "description": "views.book",
+        "peekOfCode": "tag = Tag(name=\"book\", description=\"Some Book\")\napi = APIBlueprint(\n    \"/book\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/book\")",
+        "detail": "views.book",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "views.book",
+        "description": "views.book",
+        "peekOfCode": "api = APIBlueprint(\n    \"/book\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/book\")\ndef get_book():",
+        "detail": "views.book",
+        "documentation": {}
+    },
+    {
+        "label": "info",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "info = Info(title='book API', version='1.0.0')\napp = OpenAPI(__name__, info=info)\napp.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = OpenAPI(__name__, info=info)\napp.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"SQLALCHEMY_DATABASE_URI\"]",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"]",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():\n        db.create_all()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"PROPAGATE_EXCEPTIONS\"]",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():\n        db.create_all()\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    }
+]

@@ -1,6 +1,6 @@
 from regex import B
 from models.book import Book
-from schemas.book import BookBody
+from schemas.book import BookBody, BookBodyDeserializer
 
 from flask_openapi3 import APIBlueprint
 from flask_openapi3 import Tag
@@ -21,7 +21,7 @@ api = APIBlueprint(
 def get_book():
     """Get all Book
     """
-    return {"books": [dict(BookBody(**b.to_json())) for b in Book.get_all()]}
+    return {"books": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]}
 
 
 @api.post("/book")
