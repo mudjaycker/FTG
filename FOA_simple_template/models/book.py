@@ -10,10 +10,22 @@ class Book(db.Model):
     def to_json(self):
         return {"id": self.id_, **vars(self)}
 
-    def save_to_db(self):
-        db.session.add(self)
-        db.session.commit()
 
     @classmethod
     def get_all(cls):
         return cls.query.all()
+
+    @classmethod
+    def get_by(cls, id_:int):
+        return cls.query.filter_by(id_=id_).first()
+
+    def save_to_db(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def delete_from_db(self):
+        db.session.delete(self)
+        db.session.commit()
+
+#  The update method still need to be made ......
+        
