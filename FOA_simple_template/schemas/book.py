@@ -1,6 +1,9 @@
 from pydantic import BaseModel, StrictStr
 
 
+class BookQuery(BaseModel):
+    id_: int
+
 
 class BookBody(BaseModel):
     age: int
