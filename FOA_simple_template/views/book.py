@@ -21,7 +21,9 @@ api = APIBlueprint(
 def get_book():
     """Get all Book
     """
-    return {"books": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]}
+    return {
+        "books": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]
+    }
 
 
 @api.post("/book")
@@ -30,4 +32,4 @@ def create_book(body: BookBody):
     d = body.dict()
     book = Book(**d)
     book.save_to_db()
-    return {"code": 0, "message": "ok"}
+    return {"code": 0, "message": "ok", "datas": [{**d}]}
