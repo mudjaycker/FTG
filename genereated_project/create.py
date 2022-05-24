@@ -6,8 +6,8 @@ import re
 from config import *
 
 
-path_to = lower_case
-path_from = "../FOA_simple_template/"
+path_to = snake_case
+path_from = "../.FOA_simple_template/"
 app_file = path_from + "app.py"
 view_file = path_from + "views/book.py"
 schema_file = path_from + "schemas/book.py"
@@ -16,9 +16,9 @@ instances_from =path_from+"instances/"
 instances_to = path_to+"/instances/"
 
 # ___new files_______________________________|
-view_file2 = path_to+"/views/"+lower_case+".py"
-schema_file2  = path_to+"/schemas/"+lower_case+".py"
-model_file2  = path_to+"/models/"+lower_case+".py"
+view_file2 = path_to+"/views/"+snake_case+".py"
+schema_file2  = path_to+"/schemas/"+snake_case+".py"
+model_file2  = path_to+"/models/"+snake_case+".py"
 app_file2 = path_to+"/app.py"
 # _______________________________________________|
 
@@ -46,10 +46,10 @@ shutil.copy(path_from+"requirements.txt", path_to+"/requirements.txt")
 with open(app_file, "r") as app_f:
     app = app_f.read()
 
-app_lower = (re.sub("book", lower_case, app))
+app_snake = (re.sub("book", snake_case, app))
 
 with open(app_file2, "w") as app_f2:
-    app_f2.write(app_lower)
+    app_f2.write(app_snake)
 # _____________________________________________________
 
 
@@ -67,10 +67,10 @@ with open(instances_to+"db.py", "w") as db2:
 with open(view_file, "r") as vi:
     v = vi.read()
 
-v_lower = (re.sub("book", lower_case, v))
+v_snake = (re.sub("book", snake_case, v))
 
 with open(view_file2, "w") as vi2:
-    vi2.write(v_lower)
+    vi2.write(v_snake)
 
 
 with open(view_file2, "r") as vi2:
