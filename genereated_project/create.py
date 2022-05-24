@@ -11,3 +11,9 @@ models_path = path_from + "models/book.py"
 
 p = pathlib2.Path(path_to)
 p.mkdir(parents=True, exist_ok=True)
+
+# view creation
+with open(views_path, "r") as vi:
+    v = vi.read()
+
+print(v)
