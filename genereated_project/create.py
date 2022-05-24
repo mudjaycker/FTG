@@ -8,6 +8,9 @@ path_from = "../FOA_simple_template/"
 view_file = path_from + "views/book.py"
 schema_file = path_from + "schemas/book.py"
 model_file = path_from + "models/book.py"
+instances_from =path_from+"instances/"
+instances_to = path_to+"/instances/"
+
 # ___new files_______________________________|
 view_file2 = path_to+"/views/"+lower_case+".py"
 schema_file2  = path_to+"/schemas/"+lower_case+".py"
@@ -16,6 +19,10 @@ model_file2  = path_to+"/models/"+lower_case+".py"
 
 p = pathlib2.Path(path_to)
 p.mkdir(parents=True, exist_ok=True)
+
+instances = pathlib2.Path(instances_to[:-1])
+instances.mkdir(parents=True, exist_ok=True)
+
 
 view_path = pathlib2.Path(path_to+"/views")
 view_path.mkdir(parents=True, exist_ok=True)
@@ -27,6 +34,15 @@ model_path = pathlib2.Path(path_to+"/models")
 model_path.mkdir(parents=True, exist_ok=True)
 
 
+
+# instance creation
+with open(instances_from+"db.py", "r") as db:
+    d = db.read()
+
+
+with open(instances_to+"db.py", "w") as db2:
+    db2.write(d)
+# _____________________________________________________
 
 # view creation
 with open(view_file, "r") as vi:
