@@ -1,0 +1,758 @@
+[
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "instances.db",
+        "description": "instances.db",
+        "isExtraImport": true,
+        "detail": "instances.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "instances.db",
+        "description": "instances.db",
+        "isExtraImport": true,
+        "detail": "instances.db",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "StrictStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "StrictStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "models.book",
+        "description": "models.book",
+        "isExtraImport": true,
+        "detail": "models.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBody",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBodyDeserializer",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookQuery",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "APIBlueprint",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAPI",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Info",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "APIBlueprint",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAPI",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Info",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "importPath": "views.book",
+        "description": "views.book",
+        "isExtraImport": true,
+        "detail": "views.book",
+        "documentation": {}
+    },
+    {
+        "label": "Pangaji",
+        "importPath": "models.pangaji",
+        "description": "models.pangaji",
+        "isExtraImport": true,
+        "detail": "models.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "PangajiBody",
+        "importPath": "schemas.pangaji",
+        "description": "schemas.pangaji",
+        "isExtraImport": true,
+        "detail": "schemas.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "PangajiBodyDeserializer",
+        "importPath": "schemas.pangaji",
+        "description": "schemas.pangaji",
+        "isExtraImport": true,
+        "detail": "schemas.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "PangajiQuery",
+        "importPath": "schemas.pangaji",
+        "description": "schemas.pangaji",
+        "isExtraImport": true,
+        "detail": "schemas.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "importPath": "views.pangaji",
+        "description": "views.pangaji",
+        "isExtraImport": true,
+        "detail": "views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "pathlib2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pathlib2",
+        "description": "pathlib2",
+        "detail": "pathlib2",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "FOA_simple_template.instances.db",
+        "description": "FOA_simple_template.instances.db",
+        "peekOfCode": "db = SQLAlchemy()",
+        "detail": "FOA_simple_template.instances.db",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "FOA_simple_template.models.book",
+        "description": "FOA_simple_template.models.book",
+        "peekOfCode": "class Book(db.Model):\n    __tablename__ = \"books\"\n    id_ = db.Column(db.Integer, primary_key=True)\n    age = db.Column(db.Integer)\n    author = db.Column(db.String(120))\n    def to_json(self):\n        return {\"id\": self.id_, **vars(self)}\n    @classmethod\n    def get_all(cls):\n        return cls.query.all()",
+        "detail": "FOA_simple_template.models.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookQuery",
+        "kind": 6,
+        "importPath": "FOA_simple_template.schemas.book",
+        "description": "FOA_simple_template.schemas.book",
+        "peekOfCode": "class BookQuery(BaseModel):\n    id_: int\nclass BookBody(BaseModel):\n    age: int\n    author: StrictStr\nclass BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
+        "detail": "FOA_simple_template.schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBody",
+        "kind": 6,
+        "importPath": "FOA_simple_template.schemas.book",
+        "description": "FOA_simple_template.schemas.book",
+        "peekOfCode": "class BookBody(BaseModel):\n    age: int\n    author: StrictStr\nclass BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
+        "detail": "FOA_simple_template.schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBodyDeserializer",
+        "kind": 6,
+        "importPath": "FOA_simple_template.schemas.book",
+        "description": "FOA_simple_template.schemas.book",
+        "peekOfCode": "class BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
+        "detail": "FOA_simple_template.schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "get_one",
+        "kind": 2,
+        "importPath": "FOA_simple_template.views.book",
+        "description": "FOA_simple_template.views.book",
+        "peekOfCode": "def get_one(path:BookQuery):\n    \"get one book\"\n    b = Book.get_by(path.id_)\n    return dict(BookBodyDeserializer(**b.to_json()))\n@api.get(\"/book\")\ndef get_book():\n    \"\"\"Get all Book\n    \"\"\"\n    return {\n        \"books\": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]",
+        "detail": "FOA_simple_template.views.book",
+        "documentation": {}
+    },
+    {
+        "label": "get_book",
+        "kind": 2,
+        "importPath": "FOA_simple_template.views.book",
+        "description": "FOA_simple_template.views.book",
+        "peekOfCode": "def get_book():\n    \"\"\"Get all Book\n    \"\"\"\n    return {\n        \"books\": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]\n    }\n@api.post(\"/book\")\ndef create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()",
+        "detail": "FOA_simple_template.views.book",
+        "documentation": {}
+    },
+    {
+        "label": "create_book",
+        "kind": 2,
+        "importPath": "FOA_simple_template.views.book",
+        "description": "FOA_simple_template.views.book",
+        "peekOfCode": "def create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()\n    book = Book(**d)\n    book.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [d]}\n@api.put(\"/book/<int:id_>\")\ndef update_book(body: BookBody,path:BookQuery):\n    \"Put a book\"\n    b = Book.get_by(path.id_)",
+        "detail": "FOA_simple_template.views.book",
+        "documentation": {}
+    },
+    {
+        "label": "update_book",
+        "kind": 2,
+        "importPath": "FOA_simple_template.views.book",
+        "description": "FOA_simple_template.views.book",
+        "peekOfCode": "def update_book(body: BookBody,path:BookQuery):\n    \"Put a book\"\n    b = Book.get_by(path.id_)\n    b.age = body.age\n    b.author = body.author\n    b.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [dict(body)]}\n@api.delete(\"/book/<int:id_>\")\ndef delete_book(path:BookQuery):\n    \"delete in book\"",
+        "detail": "FOA_simple_template.views.book",
+        "documentation": {}
+    },
+    {
+        "label": "delete_book",
+        "kind": 2,
+        "importPath": "FOA_simple_template.views.book",
+        "description": "FOA_simple_template.views.book",
+        "peekOfCode": "def delete_book(path:BookQuery):\n    \"delete in book\"\n    b= Book.get_by(path.id_)\n    b.delete_from_db()\n    return {\"response\": \"deleted\"}",
+        "detail": "FOA_simple_template.views.book",
+        "documentation": {}
+    },
+    {
+        "label": "tag",
+        "kind": 5,
+        "importPath": "FOA_simple_template.views.book",
+        "description": "FOA_simple_template.views.book",
+        "peekOfCode": "tag = Tag(name=\"book\", description=\"Some Book\")\napi = APIBlueprint(\n    \"/book\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/book/<int:id_>\")",
+        "detail": "FOA_simple_template.views.book",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "FOA_simple_template.views.book",
+        "description": "FOA_simple_template.views.book",
+        "peekOfCode": "api = APIBlueprint(\n    \"/book\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/book/<int:id_>\")\ndef get_one(path:BookQuery):",
+        "detail": "FOA_simple_template.views.book",
+        "documentation": {}
+    },
+    {
+        "label": "info",
+        "kind": 5,
+        "importPath": "FOA_simple_template.app",
+        "description": "FOA_simple_template.app",
+        "peekOfCode": "info = Info(title='book API', version='1.0.0')\napp = OpenAPI(__name__, info=info)\napp.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db",
+        "detail": "FOA_simple_template.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "FOA_simple_template.app",
+        "description": "FOA_simple_template.app",
+        "peekOfCode": "app = OpenAPI(__name__, info=info)\napp.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)",
+        "detail": "FOA_simple_template.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "FOA_simple_template.app",
+        "description": "FOA_simple_template.app",
+        "peekOfCode": "app.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request",
+        "detail": "FOA_simple_template.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"SQLALCHEMY_DATABASE_URI\"]",
+        "kind": 5,
+        "importPath": "FOA_simple_template.app",
+        "description": "FOA_simple_template.app",
+        "peekOfCode": "app.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():",
+        "detail": "FOA_simple_template.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"]",
+        "kind": 5,
+        "importPath": "FOA_simple_template.app",
+        "description": "FOA_simple_template.app",
+        "peekOfCode": "app.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():\n        db.create_all()",
+        "detail": "FOA_simple_template.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"PROPAGATE_EXCEPTIONS\"]",
+        "kind": 5,
+        "importPath": "FOA_simple_template.app",
+        "description": "FOA_simple_template.app",
+        "peekOfCode": "app.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():\n        db.create_all()\n    app.run(debug=True)",
+        "detail": "FOA_simple_template.app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.instances.db",
+        "description": "genereated_project.pangaji.instances.db",
+        "peekOfCode": "db = SQLAlchemy()",
+        "detail": "genereated_project.pangaji.instances.db",
+        "documentation": {}
+    },
+    {
+        "label": "Pangaji",
+        "kind": 6,
+        "importPath": "genereated_project.pangaji.models.pangaji",
+        "description": "genereated_project.pangaji.models.pangaji",
+        "peekOfCode": "class Pangaji(db.Model):\n    __tablename__ = \"books\"\n    id_ = db.Column(db.Integer, primary_key=True)\n    age = db.Column(db.Integer)\n    author = db.Column(db.String(120))\n    def to_json(self):\n        return {\"id\": self.id_, **vars(self)}\n    @classmethod\n    def get_all(cls):\n        return cls.query.all()",
+        "detail": "genereated_project.pangaji.models.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "PangajiQuery",
+        "kind": 6,
+        "importPath": "genereated_project.pangaji.schemas.pangaji",
+        "description": "genereated_project.pangaji.schemas.pangaji",
+        "peekOfCode": "class PangajiQuery(BaseModel):\n    id_: int\nclass PangajiBody(BaseModel):\n    age: int\n    author: StrictStr\nclass PangajiBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
+        "detail": "genereated_project.pangaji.schemas.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "PangajiBody",
+        "kind": 6,
+        "importPath": "genereated_project.pangaji.schemas.pangaji",
+        "description": "genereated_project.pangaji.schemas.pangaji",
+        "peekOfCode": "class PangajiBody(BaseModel):\n    age: int\n    author: StrictStr\nclass PangajiBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
+        "detail": "genereated_project.pangaji.schemas.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "PangajiBodyDeserializer",
+        "kind": 6,
+        "importPath": "genereated_project.pangaji.schemas.pangaji",
+        "description": "genereated_project.pangaji.schemas.pangaji",
+        "peekOfCode": "class PangajiBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
+        "detail": "genereated_project.pangaji.schemas.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "get_one",
+        "kind": 2,
+        "importPath": "genereated_project.pangaji.views.pangaji",
+        "description": "genereated_project.pangaji.views.pangaji",
+        "peekOfCode": "def get_one(path:PangajiQuery):\n    \"get one pangaji\"\n    b = Pangaji.get_by(path.id_)\n    return dict(PangajiBodyDeserializer(**b.to_json()))\n@api.get(\"/pangaji\")\ndef get_pangaji():\n    \"\"\"Get all Pangaji\n    \"\"\"\n    return {\n        \"pangajis\": [dict(PangajiBodyDeserializer(**b.to_json())) for b in Pangaji.get_all()]",
+        "detail": "genereated_project.pangaji.views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "get_pangaji",
+        "kind": 2,
+        "importPath": "genereated_project.pangaji.views.pangaji",
+        "description": "genereated_project.pangaji.views.pangaji",
+        "peekOfCode": "def get_pangaji():\n    \"\"\"Get all Pangaji\n    \"\"\"\n    return {\n        \"pangajis\": [dict(PangajiBodyDeserializer(**b.to_json())) for b in Pangaji.get_all()]\n    }\n@api.post(\"/pangaji\")\ndef create_pangaji(body: PangajiBody):\n    \"Post a pangaji\"\n    d = body.dict()",
+        "detail": "genereated_project.pangaji.views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "create_pangaji",
+        "kind": 2,
+        "importPath": "genereated_project.pangaji.views.pangaji",
+        "description": "genereated_project.pangaji.views.pangaji",
+        "peekOfCode": "def create_pangaji(body: PangajiBody):\n    \"Post a pangaji\"\n    d = body.dict()\n    pangaji = Pangaji(**d)\n    pangaji.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [d]}\n@api.put(\"/pangaji/<int:id_>\")\ndef update_pangaji(body: PangajiBody,path:PangajiQuery):\n    \"Put a pangaji\"\n    b = Pangaji.get_by(path.id_)",
+        "detail": "genereated_project.pangaji.views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "update_pangaji",
+        "kind": 2,
+        "importPath": "genereated_project.pangaji.views.pangaji",
+        "description": "genereated_project.pangaji.views.pangaji",
+        "peekOfCode": "def update_pangaji(body: PangajiBody,path:PangajiQuery):\n    \"Put a pangaji\"\n    b = Pangaji.get_by(path.id_)\n    b.age = body.age\n    b.author = body.author\n    b.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [dict(body)]}\n@api.delete(\"/pangaji/<int:id_>\")\ndef delete_pangaji(path:PangajiQuery):\n    \"delete in pangaji\"",
+        "detail": "genereated_project.pangaji.views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "delete_pangaji",
+        "kind": 2,
+        "importPath": "genereated_project.pangaji.views.pangaji",
+        "description": "genereated_project.pangaji.views.pangaji",
+        "peekOfCode": "def delete_pangaji(path:PangajiQuery):\n    \"delete in pangaji\"\n    b= Pangaji.get_by(path.id_)\n    b.delete_from_db()\n    return {\"response\": \"deleted\"}",
+        "detail": "genereated_project.pangaji.views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "tag",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.views.pangaji",
+        "description": "genereated_project.pangaji.views.pangaji",
+        "peekOfCode": "tag = Tag(name=\"pangaji\", description=\"Some Pangaji\")\napi = APIBlueprint(\n    \"/pangaji\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/pangaji/<int:id_>\")",
+        "detail": "genereated_project.pangaji.views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.views.pangaji",
+        "description": "genereated_project.pangaji.views.pangaji",
+        "peekOfCode": "api = APIBlueprint(\n    \"/pangaji\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/pangaji/<int:id_>\")\ndef get_one(path:PangajiQuery):",
+        "detail": "genereated_project.pangaji.views.pangaji",
+        "documentation": {}
+    },
+    {
+        "label": "info",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.app",
+        "description": "genereated_project.pangaji.app",
+        "peekOfCode": "info = Info(title='pangaji API', version='1.0.0')\napp = OpenAPI(__name__, info=info)\napp.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db",
+        "detail": "genereated_project.pangaji.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.app",
+        "description": "genereated_project.pangaji.app",
+        "peekOfCode": "app = OpenAPI(__name__, info=info)\napp.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)",
+        "detail": "genereated_project.pangaji.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.app",
+        "description": "genereated_project.pangaji.app",
+        "peekOfCode": "app.secret_key = \"keep calm\"\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request",
+        "detail": "genereated_project.pangaji.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"SQLALCHEMY_DATABASE_URI\"]",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.app",
+        "description": "genereated_project.pangaji.app",
+        "peekOfCode": "app.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///test.db\"\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():",
+        "detail": "genereated_project.pangaji.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"]",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.app",
+        "description": "genereated_project.pangaji.app",
+        "peekOfCode": "app.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\napp.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():\n        db.create_all()",
+        "detail": "genereated_project.pangaji.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"PROPAGATE_EXCEPTIONS\"]",
+        "kind": 5,
+        "importPath": "genereated_project.pangaji.app",
+        "description": "genereated_project.pangaji.app",
+        "peekOfCode": "app.config[\"PROPAGATE_EXCEPTIONS\"] = True\n# register api\napp.register_api(api)\nif __name__ == '__main__':\n    from instances.db import db\n    db.init_app(app)\n    @app.before_first_request\n    def create_tables():\n        db.create_all()\n    app.run(debug=True)",
+        "detail": "genereated_project.pangaji.app",
+        "documentation": {}
+    },
+    {
+        "label": "lower_case",
+        "kind": 5,
+        "importPath": "genereated_project.config",
+        "description": "genereated_project.config",
+        "peekOfCode": "lower_case = \"pangaji\"\nPascalCase = \"Pangaji\"",
+        "detail": "genereated_project.config",
+        "documentation": {}
+    },
+    {
+        "label": "PascalCase",
+        "kind": 5,
+        "importPath": "genereated_project.config",
+        "description": "genereated_project.config",
+        "peekOfCode": "PascalCase = \"Pangaji\"",
+        "detail": "genereated_project.config",
+        "documentation": {}
+    },
+    {
+        "label": "path_to",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "path_to = lower_case\npath_from = \"../FOA_simple_template/\"\napp_file = path_from + \"app.py\"\nview_file = path_from + \"views/book.py\"\nschema_file = path_from + \"schemas/book.py\"\nmodel_file = path_from + \"models/book.py\"\ninstances_from =path_from+\"instances/\"\ninstances_to = path_to+\"/instances/\"\n# ___new files_______________________________|\nview_file2 = path_to+\"/views/\"+lower_case+\".py\"",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "path_from",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "path_from = \"../FOA_simple_template/\"\napp_file = path_from + \"app.py\"\nview_file = path_from + \"views/book.py\"\nschema_file = path_from + \"schemas/book.py\"\nmodel_file = path_from + \"models/book.py\"\ninstances_from =path_from+\"instances/\"\ninstances_to = path_to+\"/instances/\"\n# ___new files_______________________________|\nview_file2 = path_to+\"/views/\"+lower_case+\".py\"\nschema_file2  = path_to+\"/schemas/\"+lower_case+\".py\"",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "app_file",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "app_file = path_from + \"app.py\"\nview_file = path_from + \"views/book.py\"\nschema_file = path_from + \"schemas/book.py\"\nmodel_file = path_from + \"models/book.py\"\ninstances_from =path_from+\"instances/\"\ninstances_to = path_to+\"/instances/\"\n# ___new files_______________________________|\nview_file2 = path_to+\"/views/\"+lower_case+\".py\"\nschema_file2  = path_to+\"/schemas/\"+lower_case+\".py\"\nmodel_file2  = path_to+\"/models/\"+lower_case+\".py\"",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "view_file",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "view_file = path_from + \"views/book.py\"\nschema_file = path_from + \"schemas/book.py\"\nmodel_file = path_from + \"models/book.py\"\ninstances_from =path_from+\"instances/\"\ninstances_to = path_to+\"/instances/\"\n# ___new files_______________________________|\nview_file2 = path_to+\"/views/\"+lower_case+\".py\"\nschema_file2  = path_to+\"/schemas/\"+lower_case+\".py\"\nmodel_file2  = path_to+\"/models/\"+lower_case+\".py\"\napp_file2 = path_to+\"/app.py\"",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "schema_file",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "schema_file = path_from + \"schemas/book.py\"\nmodel_file = path_from + \"models/book.py\"\ninstances_from =path_from+\"instances/\"\ninstances_to = path_to+\"/instances/\"\n# ___new files_______________________________|\nview_file2 = path_to+\"/views/\"+lower_case+\".py\"\nschema_file2  = path_to+\"/schemas/\"+lower_case+\".py\"\nmodel_file2  = path_to+\"/models/\"+lower_case+\".py\"\napp_file2 = path_to+\"/app.py\"\n# _______________________________________________|",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "model_file",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "model_file = path_from + \"models/book.py\"\ninstances_from =path_from+\"instances/\"\ninstances_to = path_to+\"/instances/\"\n# ___new files_______________________________|\nview_file2 = path_to+\"/views/\"+lower_case+\".py\"\nschema_file2  = path_to+\"/schemas/\"+lower_case+\".py\"\nmodel_file2  = path_to+\"/models/\"+lower_case+\".py\"\napp_file2 = path_to+\"/app.py\"\n# _______________________________________________|\np = pathlib2.Path(path_to)",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "instances_to",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "instances_to = path_to+\"/instances/\"\n# ___new files_______________________________|\nview_file2 = path_to+\"/views/\"+lower_case+\".py\"\nschema_file2  = path_to+\"/schemas/\"+lower_case+\".py\"\nmodel_file2  = path_to+\"/models/\"+lower_case+\".py\"\napp_file2 = path_to+\"/app.py\"\n# _______________________________________________|\np = pathlib2.Path(path_to)\np.mkdir(parents=True, exist_ok=True)\ninstances = pathlib2.Path(instances_to[:-1])",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "view_file2",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "view_file2 = path_to+\"/views/\"+lower_case+\".py\"\nschema_file2  = path_to+\"/schemas/\"+lower_case+\".py\"\nmodel_file2  = path_to+\"/models/\"+lower_case+\".py\"\napp_file2 = path_to+\"/app.py\"\n# _______________________________________________|\np = pathlib2.Path(path_to)\np.mkdir(parents=True, exist_ok=True)\ninstances = pathlib2.Path(instances_to[:-1])\ninstances.mkdir(parents=True, exist_ok=True)\nview_path = pathlib2.Path(path_to+\"/views\")",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "app_file2",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "app_file2 = path_to+\"/app.py\"\n# _______________________________________________|\np = pathlib2.Path(path_to)\np.mkdir(parents=True, exist_ok=True)\ninstances = pathlib2.Path(instances_to[:-1])\ninstances.mkdir(parents=True, exist_ok=True)\nview_path = pathlib2.Path(path_to+\"/views\")\nview_path.mkdir(parents=True, exist_ok=True)\nschema_path = pathlib2.Path(path_to+\"/schemas\")\nschema_path.mkdir(parents=True, exist_ok=True)",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "p = pathlib2.Path(path_to)\np.mkdir(parents=True, exist_ok=True)\ninstances = pathlib2.Path(instances_to[:-1])\ninstances.mkdir(parents=True, exist_ok=True)\nview_path = pathlib2.Path(path_to+\"/views\")\nview_path.mkdir(parents=True, exist_ok=True)\nschema_path = pathlib2.Path(path_to+\"/schemas\")\nschema_path.mkdir(parents=True, exist_ok=True)\nmodel_path = pathlib2.Path(path_to+\"/models\")\nmodel_path.mkdir(parents=True, exist_ok=True)",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "instances",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "instances = pathlib2.Path(instances_to[:-1])\ninstances.mkdir(parents=True, exist_ok=True)\nview_path = pathlib2.Path(path_to+\"/views\")\nview_path.mkdir(parents=True, exist_ok=True)\nschema_path = pathlib2.Path(path_to+\"/schemas\")\nschema_path.mkdir(parents=True, exist_ok=True)\nmodel_path = pathlib2.Path(path_to+\"/models\")\nmodel_path.mkdir(parents=True, exist_ok=True)\n# copy the requirement file_______________________|\nshutil.copy(path_from+\"requirements.txt\", path_to+\"/requirements.txt\")",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "view_path",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "view_path = pathlib2.Path(path_to+\"/views\")\nview_path.mkdir(parents=True, exist_ok=True)\nschema_path = pathlib2.Path(path_to+\"/schemas\")\nschema_path.mkdir(parents=True, exist_ok=True)\nmodel_path = pathlib2.Path(path_to+\"/models\")\nmodel_path.mkdir(parents=True, exist_ok=True)\n# copy the requirement file_______________________|\nshutil.copy(path_from+\"requirements.txt\", path_to+\"/requirements.txt\")\n#  ___________________________________________________|\n# app creation",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "schema_path",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "schema_path = pathlib2.Path(path_to+\"/schemas\")\nschema_path.mkdir(parents=True, exist_ok=True)\nmodel_path = pathlib2.Path(path_to+\"/models\")\nmodel_path.mkdir(parents=True, exist_ok=True)\n# copy the requirement file_______________________|\nshutil.copy(path_from+\"requirements.txt\", path_to+\"/requirements.txt\")\n#  ___________________________________________________|\n# app creation\nwith open(app_file, \"r\") as app_f:\n    app = app_f.read()",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "model_path",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "model_path = pathlib2.Path(path_to+\"/models\")\nmodel_path.mkdir(parents=True, exist_ok=True)\n# copy the requirement file_______________________|\nshutil.copy(path_from+\"requirements.txt\", path_to+\"/requirements.txt\")\n#  ___________________________________________________|\n# app creation\nwith open(app_file, \"r\") as app_f:\n    app = app_f.read()\napp_lower = (re.sub(\"book\", lower_case, app))\nwith open(app_file2, \"w\") as app_f2:",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "app_lower",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "app_lower = (re.sub(\"book\", lower_case, app))\nwith open(app_file2, \"w\") as app_f2:\n    app_f2.write(app_lower)\n# _____________________________________________________\n# instance creation\nwith open(instances_from+\"db.py\", \"r\") as db:\n    d = db.read()\nwith open(instances_to+\"db.py\", \"w\") as db2:\n    db2.write(d)\n# _____________________________________________________",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "v_lower",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "v_lower = (re.sub(\"book\", lower_case, v))\nwith open(view_file2, \"w\") as vi2:\n    vi2.write(v_lower)\nwith open(view_file2, \"r\") as vi2:\n    v2 = vi2.read()\nv2_pascal = (re.sub(\"Book\", PascalCase, v2))\nwith open(view_file2, \"w\") as vi3:\n    vi3.write(v2_pascal)\n# ____________________________________________________\n# schema creation",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "v2_pascal",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "v2_pascal = (re.sub(\"Book\", PascalCase, v2))\nwith open(view_file2, \"w\") as vi3:\n    vi3.write(v2_pascal)\n# ____________________________________________________\n# schema creation\nwith open(schema_file, \"r\") as sch:\n    sc = sch.read()\nsc_pascal = (re.sub(\"Book\", PascalCase, sc))\nwith open(schema_file2, \"w\") as sch2:\n    sch2.write(sc_pascal)",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "sc_pascal",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "sc_pascal = (re.sub(\"Book\", PascalCase, sc))\nwith open(schema_file2, \"w\") as sch2:\n    sch2.write(sc_pascal)\n# _____________________________________________________\n# model creation\nwith open(model_file, \"r\") as mdl:\n    md = mdl.read()\nmd_pascal = (re.sub(\"Book\", PascalCase, md))\nwith open(model_file2, \"w\") as mdl2:\n    mdl2.write(md_pascal)",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    },
+    {
+        "label": "md_pascal",
+        "kind": 5,
+        "importPath": "genereated_project.create",
+        "description": "genereated_project.create",
+        "peekOfCode": "md_pascal = (re.sub(\"Book\", PascalCase, md))\nwith open(model_file2, \"w\") as mdl2:\n    mdl2.write(md_pascal)\n# _____________________________________________________",
+        "detail": "genereated_project.create",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,240 @@
+[
+    {
+        "label": "B",
+        "importPath": "regex",
+        "description": "regex",
+        "isExtraImport": true,
+        "detail": "regex",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "importPath": "regex",
+        "description": "regex",
+        "isExtraImport": true,
+        "detail": "regex",
+        "documentation": {}
+    },
+    {
+        "label": "ChambreFroide",
+        "importPath": "models.chambre_froide",
+        "description": "models.chambre_froide",
+        "isExtraImport": true,
+        "detail": "models.chambre_froide",
+        "documentation": {}
+    },
+    {
+        "label": "ChambreFroideBody",
+        "importPath": "schemas.chambre_froide",
+        "description": "schemas.chambre_froide",
+        "isExtraImport": true,
+        "detail": "schemas.chambre_froide",
+        "documentation": {}
+    },
+    {
+        "label": "ChambreFroideBodyDeserializer",
+        "importPath": "schemas.chambre_froide",
+        "description": "schemas.chambre_froide",
+        "isExtraImport": true,
+        "detail": "schemas.chambre_froide",
+        "documentation": {}
+    },
+    {
+        "label": "ChambreFroideQuery",
+        "importPath": "schemas.chambre_froide",
+        "description": "schemas.chambre_froide",
+        "isExtraImport": true,
+        "detail": "schemas.chambre_froide",
+        "documentation": {}
+    },
+    {
+        "label": "APIBlueprint",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "APIBlueprint",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "flask_openapi3",
+        "description": "flask_openapi3",
+        "isExtraImport": true,
+        "detail": "flask_openapi3",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "models.book",
+        "description": "models.book",
+        "isExtraImport": true,
+        "detail": "models.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBody",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookBodyDeserializer",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "BookQuery",
+        "importPath": "schemas.book",
+        "description": "schemas.book",
+        "isExtraImport": true,
+        "detail": "schemas.book",
+        "documentation": {}
+    },
+    {
+        "label": "get_one",
+        "kind": 2,
+        "importPath": "temp.jeux",
+        "description": "temp.jeux",
+        "peekOfCode": "def get_one(path:ChambreFroideQuery):\n    \"get one chambre_froide\"\n    b = ChambreFroide.get_by(path.id_)\n    return dict(ChambreFroideBodyDeserializer(**b.to_json()))\n@api.get(\"/chambre_froide\")\ndef get_chambre_froide():\n    \"\"\"Get all ChambreFroide\n    \"\"\"\n    return {\n        \"chambre_froides\": [dict(ChambreFroideBodyDeserializer(**b.to_json())) for b in ChambreFroide.get_all()]",
+        "detail": "temp.jeux",
+        "documentation": {}
+    },
+    {
+        "label": "get_chambre_froide",
+        "kind": 2,
+        "importPath": "temp.jeux",
+        "description": "temp.jeux",
+        "peekOfCode": "def get_chambre_froide():\n    \"\"\"Get all ChambreFroide\n    \"\"\"\n    return {\n        \"chambre_froides\": [dict(ChambreFroideBodyDeserializer(**b.to_json())) for b in ChambreFroide.get_all()]\n    }\n@api.post(\"/chambre_froide\")\ndef create_chambre_froide(body: ChambreFroideBody):\n    \"Post a chambre_froide\"\n    d = body.dict()",
+        "detail": "temp.jeux",
+        "documentation": {}
+    },
+    {
+        "label": "create_chambre_froide",
+        "kind": 2,
+        "importPath": "temp.jeux",
+        "description": "temp.jeux",
+        "peekOfCode": "def create_chambre_froide(body: ChambreFroideBody):\n    \"Post a chambre_froide\"\n    d = body.dict()\n    chambre_froide = ChambreFroide(**d)\n    chambre_froide.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [d]}\n@api.put(\"/chambre_froide/<int:id_>\")\ndef update_chambre_froide(body: ChambreFroideBody,path:ChambreFroideQuery):\n    \"Put a chambre_froide\"\n    b = ChambreFroide.get_by(path.id_)",
+        "detail": "temp.jeux",
+        "documentation": {}
+    },
+    {
+        "label": "update_chambre_froide",
+        "kind": 2,
+        "importPath": "temp.jeux",
+        "description": "temp.jeux",
+        "peekOfCode": "def update_chambre_froide(body: ChambreFroideBody,path:ChambreFroideQuery):\n    \"Put a chambre_froide\"\n    b = ChambreFroide.get_by(path.id_)\n    b.age = body.age\n    b.author = body.author\n    b.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [dict(body)]}\n@api.delete(\"/chambre_froide/<int:id_>\")\ndef delete_chambre_froide(path:ChambreFroideQuery):\n    \"delete in chambre_froide\"",
+        "detail": "temp.jeux",
+        "documentation": {}
+    },
+    {
+        "label": "delete_chambre_froide",
+        "kind": 2,
+        "importPath": "temp.jeux",
+        "description": "temp.jeux",
+        "peekOfCode": "def delete_chambre_froide(path:ChambreFroideQuery):\n    \"delete in chambre_froide\"\n    b= ChambreFroide.get_by(path.id_)\n    b.delete_from_db()\n    return {\"response\": \"deleted\"}",
+        "detail": "temp.jeux",
+        "documentation": {}
+    },
+    {
+        "label": "tag",
+        "kind": 5,
+        "importPath": "temp.jeux",
+        "description": "temp.jeux",
+        "peekOfCode": "tag = Tag(name=\"chambre_froide\", description=\"Some ChambreFroide\")\napi = APIBlueprint(\n    \"/chambre_froide\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/chambre_froide/<int:id_>\")",
+        "detail": "temp.jeux",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "temp.jeux",
+        "description": "temp.jeux",
+        "peekOfCode": "api = APIBlueprint(\n    \"/chambre_froide\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/chambre_froide/<int:id_>\")\ndef get_one(path:ChambreFroideQuery):",
+        "detail": "temp.jeux",
+        "documentation": {}
+    },
+    {
+        "label": "get_one",
+        "kind": 2,
+        "importPath": "book",
+        "description": "book",
+        "peekOfCode": "def get_one(path:BookQuery):\n    \"get one book\"\n    b = Book.get_by(path.id_)\n    return dict(BookBodyDeserializer(**b.to_json()))\n@api.get(\"/book\")\ndef get_book():\n    \"\"\"Get all Book\n    \"\"\"\n    return {\n        \"books\": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]",
+        "detail": "book",
+        "documentation": {}
+    },
+    {
+        "label": "get_book",
+        "kind": 2,
+        "importPath": "book",
+        "description": "book",
+        "peekOfCode": "def get_book():\n    \"\"\"Get all Book\n    \"\"\"\n    return {\n        \"books\": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]\n    }\n@api.post(\"/book\")\ndef create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()",
+        "detail": "book",
+        "documentation": {}
+    },
+    {
+        "label": "create_book",
+        "kind": 2,
+        "importPath": "book",
+        "description": "book",
+        "peekOfCode": "def create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()\n    book = Book(**d)\n    book.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [d]}\n@api.put(\"/book/<int:id_>\")\ndef update_book(body: BookBody,path:BookQuery):\n    \"Put a book\"\n    b = Book.get_by(path.id_)",
+        "detail": "book",
+        "documentation": {}
+    },
+    {
+        "label": "update_book",
+        "kind": 2,
+        "importPath": "book",
+        "description": "book",
+        "peekOfCode": "def update_book(body: BookBody,path:BookQuery):\n    \"Put a book\"\n    b = Book.get_by(path.id_)\n    b.age = body.age\n    b.author = body.author\n    b.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [dict(body)]}\n@api.delete(\"/book/<int:id_>\")\ndef delete_book(path:BookQuery):\n    \"delete in book\"",
+        "detail": "book",
+        "documentation": {}
+    },
+    {
+        "label": "delete_book",
+        "kind": 2,
+        "importPath": "book",
+        "description": "book",
+        "peekOfCode": "def delete_book(path:BookQuery):\n    \"delete in book\"\n    b= Book.get_by(path.id_)\n    b.delete_from_db()\n    return {\"response\": \"deleted\"}",
+        "detail": "book",
+        "documentation": {}
+    },
+    {
+        "label": "tag",
+        "kind": 5,
+        "importPath": "book",
+        "description": "book",
+        "peekOfCode": "tag = Tag(name=\"book\", description=\"Some Book\")\napi = APIBlueprint(\n    \"/book\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/book/<int:id_>\")",
+        "detail": "book",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "book",
+        "description": "book",
+        "peekOfCode": "api = APIBlueprint(\n    \"/book\",\n    __name__,\n    url_prefix=\"/api\",\n    abp_tags=[tag],\n    # disable openapi UI\n    doc_ui=True,\n)\n@api.get(\"/book/<int:id_>\")\ndef get_one(path:BookQuery):",
+        "detail": "book",
+        "documentation": {}
+    }
+]

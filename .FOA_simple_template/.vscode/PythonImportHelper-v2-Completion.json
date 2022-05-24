@@ -16,15 +16,15 @@
         "documentation": {}
     },
     {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "BaseModel",
+        "label": "StrictStr",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -126,7 +126,7 @@
         "kind": 6,
         "importPath": "schemas.book",
         "description": "schemas.book",
-        "peekOfCode": "class BookBody(BaseModel):\n    age: int\n    author: str\nclass BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: str",
+        "peekOfCode": "class BookBody(BaseModel):\n    age: int\n    author: StrictStr\nclass BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
         "detail": "schemas.book",
         "documentation": {}
     },
@@ -135,7 +135,7 @@
         "kind": 6,
         "importPath": "schemas.book",
         "description": "schemas.book",
-        "peekOfCode": "class BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: str",
+        "peekOfCode": "class BookBodyDeserializer(BaseModel):\n    id_: int\n    age: int\n    author: StrictStr",
         "detail": "schemas.book",
         "documentation": {}
     },
@@ -144,7 +144,7 @@
         "kind": 2,
         "importPath": "views.book",
         "description": "views.book",
-        "peekOfCode": "def get_book():\n    \"\"\"Get all Book\n    \"\"\"\n    return {\"books\": [dict(BookBodyDeserializer(**b.to_json())) for b in Book.get_all()]}\n@api.post(\"/book\")\ndef create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()\n    book = Book(**d)\n    book.save_to_db()",
+        "peekOfCode": "def get_book():\n    \"\"\"Get all Book\n    \"\"\"\n    return {\n        \"books\": [(BookBodyDeserializer(**b.to_json()).dict) for b in Book.get_all()]\n    }\n@api.post(\"/book\")\ndef create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()",
         "detail": "views.book",
         "documentation": {}
     },
@@ -153,7 +153,7 @@
         "kind": 2,
         "importPath": "views.book",
         "description": "views.book",
-        "peekOfCode": "def create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()\n    book = Book(**d)\n    book.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\"}",
+        "peekOfCode": "def create_book(body: BookBody):\n    \"Post a book\"\n    d = body.dict()\n    book = Book(**d)\n    book.save_to_db()\n    return {\"code\": 0, \"message\": \"ok\", \"datas\": [{**d}]}",
         "detail": "views.book",
         "documentation": {}
     },

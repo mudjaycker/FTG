@@ -1,2 +1,2 @@
-lower_case = "pangaji"
-PascalCase = "Pangaji"
+snake_case = "api_test"
+PascalCase = "ApiTest"
