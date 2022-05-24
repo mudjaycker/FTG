@@ -1,4 +1,6 @@
+
 import shutil
+import time
 import pathlib2
 import re
 from config import *
@@ -100,3 +102,7 @@ md_pascal = (re.sub("Book", PascalCase, md))
 with open(model_file2, "w") as mdl2:
     mdl2.write(md_pascal)
 # _____________________________________________________
+
+
+# remove the source tree ____________________________________
+shutil.rmtree(path_from)
