@@ -1,4 +1,4 @@
-import path
+import shutil
 import pathlib2
 import re
 from config import *
@@ -36,6 +36,9 @@ schema_path.mkdir(parents=True, exist_ok=True)
 model_path = pathlib2.Path(path_to+"/models")
 model_path.mkdir(parents=True, exist_ok=True)
 
+# copy the requirement file_______________________|
+shutil.copy(path_from+"requirements.txt", path_to+"/requirements.txt")
+#  ___________________________________________________|
 
 # app creation
 with open(app_file, "r") as app_f:
