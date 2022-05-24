@@ -1,4 +1,3 @@
-from regex import B
 from models.book import Book
 from schemas.book import BookBody, BookBodyDeserializer, BookQuery
 
