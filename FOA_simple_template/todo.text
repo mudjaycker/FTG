@@ -1,0 +1,15 @@
+create app.py
+
+create 4 folders
+	1- instances/db
+	2- models/<name>.py
+	3- schemas/<name>.py
+	4- views/<name>.py
+
+create config.py
+	lower_case = name
+	PascalCase = Name
+	for each file of 5 files
+		replace 'book' with lower_case
+		replace 'Book' with PascalCase	
+
